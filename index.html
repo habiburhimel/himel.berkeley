@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Habibur Rahman Himel</title>
+
+  <!-- Lottie -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" role="navigation" aria-label="Main">
+    <a class="brand" href="#home">Habibur Rahman Himel</a>
+
+    <nav class="links" aria-label="Primary navigation" id="primary-nav">
+      <a class="link" href="#home">Home</a>
+      <a class="link" href="#about">About</a>
+      <a class="link" href="#achievements">Achievements</a>
+      <a class="link" href="#projects">Projects</a>
+      <a class="link" href="#interests">Interests</a>
+      <a class="link" href="#contact">Contact</a>
+      <a class="link" href="#social">Social Media</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <nav id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#projects">Projects</a>
+    <a href="#interests">Interests</a>
+    <a href="#contact">Contact</a>
+    <a href="#social">Social Media</a>
+  </nav>
+
+  <main class="page" role="main">
+
+    <!-- HERO -->
+    <section class="hero" id="home" role="banner">
+      <div class="content">
+        <h1>Hello!</h1>
+        <p>Welcome to my website.</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <h2 class="section-title">About Me</h2>
+      <p class="lead">
+        Hi, I’m <strong>Habibur Rahman Himel</strong>. I’m from Bangladesh and currently studying at UC Berkeley. I'm passionate about AI, ML, NLP, robotics, and human-centered software.
+      </p>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="section" id="achievements">
+      <h2 class="section-title">Achievements & Awards</h2>
+
+      <details>
+        <summary>View Inside</summary>
+
+        <div class="card">
+          <h3>National Champion — Bangladesh Mathematical Olympiad (BdMO)</h3>
+          <p>Recognized nationwide for excellence in mathematical problem solving.</p>
+        </div>
+
+        <div class="card">
+          <h3>Dhaka Division Champion — National Education Week</h3>
+          <p>Awarded for outstanding academic performance and leadership.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- PASSION -->
+    <section class="section" id="interests">
+      <h2 class="section-title">Passion & What I Do</h2>
+
+      <div class="cols">
+        <div class="card">
+          <h3>Passion</h3>
+          <p class="lead">I love building intelligent systems and interactive tools.</p>
+
+          <h3>What I Do</h3>
+          <ul>
+            <li>Produce educational videos</li>
+            <li>Create tech & lifestyle vlogs</li>
+            <li>Build learning tools & apps</li>
+            <li>Write tutorials and guides</li>
+          </ul>
+          <p><a href="https://www.youtube.com/@HRH.02" target="_blank" rel="noopener">Watch videos →</a></p>
+        </div>
+
+        <div class="lottie-center">
+          <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_qp1q7mct.json"
+            background="transparent" speed="1" style="width:100%;max-width:360px;" loop autoplay></lottie-player>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <h2 class="section-title">From Mind to Masterpiece</h2>
+
+      <div class="cols-2-1">
+        <div class="card">
+          <h3>Explaining STEM Simply</h3>
+          <p class="lead">On my brother's YouTube channel, He simplifies Physics, Math & Engineering.</p>
+          <p><a href="https://www.youtube.com/@imYBS.7" target="_blank" rel="noopener">Watch the videos. Explore the ideas. →</a></p>
+        </div>
+
+        <div class="lottie-center">
+          <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_0yfsb3a1.json"
+            background="transparent" speed="1" style="width:100%;max-width:360px;" loop autoplay></lottie-player>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <h2 class="section-title">Get in Touch With Me!</h2>
+
+      <div class="cols">
+
+        <!-- LEFT FORM (WEB3FORMS) -->
+        <div class="card" aria-live="polite">
+          <p>Send me a message:</p>
+
+          <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <input type="hidden" name="access_key" value="0c2e18de-21cf-4155-824e-daa1e1b2d346">
+            <input type="hidden" name="subject" value="Message from Portfolio Website">
+
+            <label class="honeypot" aria-hidden="true">Do not fill this:
+              <input type="text" name="honeypot" tabindex="-1" autocomplete="off">
+            </label>
+
+            <label for="name">Your Name</label>
+            <input id="name" type="text" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input id="email" type="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <div id="cf-status" role="status" aria-live="polite"></div>
+
+            <input id="cf-submit" type="submit" value="Send Message">
+          </form>
+        </div>
+
+        <!-- RIGHT CARD -->
+        <div class="card">
+          <h3>Email me directly:</h3>
+          <p><a href="mailto:himel3655@gmail.com">himel3655@gmail.com</a></p>
+
+          <div style="margin-top:16px">
+            <h4 style="color:var(--emerald)">More Links</h4>
+            <p><a href="https://www.youtube.com/@HRH.02" target="_blank" rel="noopener">YouTube - HRH.02</a><br>
+            <a href="https://www.youtube.com/@imYBS.7" target="_blank" rel="noopener">YouTube - imYBS.7</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL -->
+    <section class="social-section" id="social">
+      <div class="social-hero">
+        <h3>Social Links</h3>
+
+        <div class="social-icons" id="social-icons" role="navigation" aria-label="Social links">
+          <!-- Only icons visible. Use aria-label on the anchor for accessibility. -->
+          <a class="social-icon" href="https://t.me/habiburhimel" target="_blank" rel="noopener" aria-label="Telegram">
+            <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+          </a>
+          <a class="social-icon" href="https://facebook.com/habibur.himel5337" target="_blank" rel="noopener" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+          <a class="social-icon" href="https://instagram.com/__code_crafted__" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a class="social-icon" href="https://x.com/HabiburHim14360" target="_blank" rel="noopener" aria-label="X">
+            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+          </a>
+          <a class="social-icon" href="mailto:himel.berkeley@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>Made with ❤️ by Habibur Rahman Himel. All rights reserved.</footer>
+
+  </main>
+
+  <!-- Small accessible JS to toggle mobile menu -->
+  <script>
+    (function() {
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      function toggleMenu() {
+        const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+        hamburger.setAttribute('aria-expanded', String(!expanded));
+        mobileMenu.setAttribute('aria-hidden', String(expanded));
+        mobileMenu.classList.toggle('open');
+      }
+
+      hamburger.addEventListener('click', toggleMenu);
+
+      // Close mobile menu when a link is clicked (good mobile UX)
+      mobileMenu.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+          hamburger.setAttribute('aria-expanded', 'false');
+          mobileMenu.setAttribute('aria-hidden', 'true');
+          mobileMenu.classList.remove('open');
+        });
+      });
+
+      // Allow ESC to close mobile menu
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          hamburger.setAttribute('aria-expanded', 'false');
+          mobileMenu.setAttribute('aria-hidden', 'true');
+          mobileMenu.classList.remove('open');
+        }
+      });
+    })();
+  </script>
+
+  <!-- Main JS (deferred) -->
+  <script src="main.js" defer></script>
+</body>
+</html>
